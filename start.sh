@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Copy config file to directory if no config found
-mkdir /home/scrapydweb/
+mkdir -p /home/scrapydweb/projects
 cp -n /usr/local/scrapydweb_settings_v10.py /home/scrapydweb/scrapydweb_settings_v10.py
 
 scrapyd &
