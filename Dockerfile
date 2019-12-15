@@ -16,7 +16,7 @@ WORKDIR /home/scrapydweb
 ADD scrapydweb_settings_v10.py /home/scrapydweb/
 
 ADD start.sh /usr/local/
-RUN chmod +x /usr/local//start.sh
+RUN chmod +x /usr/local/start.sh
 
 ADD ./scrapyd.conf /etc/scrapyd/
 
@@ -25,4 +25,4 @@ RUN mkdir -p /var/lib/scrapyd/logs
 EXPOSE 6800
 EXPOSE 5000
 
-CMD ["/usr/local//start.sh"]
+ENTRYPOINT ["/usr/local/start.sh"]
