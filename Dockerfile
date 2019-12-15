@@ -13,7 +13,7 @@ RUN	set -ex \
 
 WORKDIR /home/scrapydweb
 
-ADD scrapydweb_settings_v10.py /home/scrapydweb/
+ADD scrapydweb_settings_v10.py /usr/local/
 
 ADD start.sh /usr/local/
 RUN chmod +x /usr/local/start.sh
